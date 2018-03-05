@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>Brandon York</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/kc.jpg');
+    min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="Portfolio.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Brandon York</b></h1>
+    <p>Full-Stack Developer, Team Builder, Trivia Buff, Sand Volleyball Aficionado, Husband, Pet-Dad</p>
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <a href="https://drive.google.com/file/d/1DfESEdDae_LV2GQGCg9B7ZULQ0ERdQlH/view?usp=sharing" target="_blank"><button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> View Resume
+    </button></a>
+  </header>
+
+  <!-- Project Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey"><a href="https://project2-snifr.herokuapp.com/" target="_blank">Snifr</a></h2>
+    <hr class="w3-opacity">
+    <div>
+      <p>Snifr is our second group project of the KU Full Stack coding course. Our task was to create a full-stack application that met the following requirments.
+          <ul>
+            <li>Use a Node and Express Web Server</li>
+            <li>Be backed by a MySQL Database an ORM (not necessarily Sequelize)</li>
+            <li>Have both GET and POST routes for retrieving and adding new data</li>
+            <li>Be deployed using Heroku (with Data)</li>
+            <li>Utilize at least one new library, package, or technology that we haven’t discussed</li>
+            <li>Have a polished frontend / UI</li>
+            <li>Have folder structure that meets MVC Paradigm</li>
+            <li>Meet good quality coding standards (indentation, scoping, naming)</li>
+            <li>Must not expose sensitive API key information on the server</li>
+          </ul>
+          <b>Description</b><br>
+          Our application snifr is a dating app for dogs. The idea is that a owner can create themselves a profile and add thier dogs. 
+          Each dog gets a profile with basic information along with a survey of their likes and dislikes. 
+          They also get to list if they have any preferences in other dogs. 
+          Our app would collect the data and save it in a database, 
+          then whenever the matches link was selected the user would see all the dog matches in order by highest percent match of survey answers, 
+          removing any dogs that didn't fit the preference critera.</p>
+          <hr class="w3-opacity">
+          <img src="./images/snifr.gif" width="100%">
+          <hr>
+          <a href="https://project2-snifr.herokuapp.com/" target="_blank">View Site</a>
+    </div>
+
+  <!-- End Project Section -->
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a href="https://github.com/byork2005/snifr" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/brandonjyork" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i><a/>
+    <a href="https://stackoverflow.com/users/story/8569571" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<!-- Add Google Maps -->
+<script>
+
+// Open and close sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
