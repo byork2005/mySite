@@ -29,7 +29,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./images/kc.jpg');
+    background-image: url('./images/background.jpg');
     min-height: 100%;
   }
 </style>
@@ -48,8 +48,8 @@
     </a>
     <div class="w3-bar-block w3-center">
       <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-      <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
       <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
       <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
     </div>
   </nav>
@@ -65,46 +65,15 @@
     <!-- Header -->
     <header class="w3-container w3-center" style="padding:128px 16px" id="home">
       <h1 class="w3-jumbo">
-        <b>Brandon York</b>
+        <img src="./images/logo2.svg" alt="Brandon York, Web Developer">
       </h1>
       <p>Full-Stack Developer, Team Builder, Trivia Buff, Sand Volleyball Aficionado, Husband, Pet-Dad</p>
-      <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-      <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
       <a href="https://drive.google.com/file/d/1DfESEdDae_LV2GQGCg9B7ZULQ0ERdQlH/view?usp=sharing" target="_blank">
         <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
           <i class="fa fa-download"></i> View Resume
         </button>
       </a>
     </header>
-
-    <!-- Portfolio Section -->
-    <div class="w3-padding-32 w3-content" id="portfolio">
-      <h2 class="w3-text-grey">Portfolio</h2>
-      <hr class="w3-opacity">
-
-      <!-- Grid for photos -->
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half">
-          <a href="use.html">
-            <img src="./images/use.jpg" style="width:100%">
-          </a>
-          <a href="burger.html">
-            <img src="./images/burger.png" style="width:100%">
-          </a>
-        </div>
-
-        <div class="w3-half">
-          <a href="snifr.html">
-            <img src="./images/snifr-01.png" style="width:100%">
-          </a>
-          <a href="dino.html">
-            <img src="./images/rex.png" style="width:100%">
-          </a>
-        </div>
-        <!-- End photo grid -->
-      </div>
-      <!-- End Portfolio Section -->
-    </div>
 
     <!-- About Section -->
     <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
@@ -173,6 +142,35 @@
       <!-- End About Section -->
     </div>
 
+        <!-- Portfolio Section -->
+        <div class="w3-padding-32 w3-content" id="portfolio">
+          <h2 class="w3-text-grey">Portfolio</h2>
+          <hr class="w3-opacity">
+    
+          <!-- Grid for photos -->
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <a href="use.html">
+                <img src="./images/use.jpg" style="width:100%">
+              </a>
+              <a href="burger.html">
+                <img src="./images/burger.png" style="width:100%">
+              </a>
+            </div>
+    
+            <div class="w3-half">
+              <a href="snifr.html">
+                <img src="./images/snifr-01.png" style="width:100%">
+              </a>
+              <a href="dino.html">
+                <img src="./images/rex.png" style="width:100%">
+              </a>
+            </div>
+            <!-- End photo grid -->
+          </div>
+          <!-- End Portfolio Section -->
+        </div>
+
     <!-- Contact Section -->
     <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
       <h2>Contact Me</h2>
@@ -183,7 +181,15 @@
           <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Overland Park, KS</p>
         <a href="mailto:brandonjyork@gmail.com">
           <p>
-            <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: brandonjyork@gmail.com</p>
+            <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>brandonjyork@gmail.com</p>
+        </a>
+        <a href="https://www.linkedin.com/in/brandonjyork/">
+          <p>
+            <i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"> </i>linkedIn.com/brandonjyork</p>
+        </a>
+        <a href="github.com/byork2005">
+          <p>
+            <i class="fa fa-github fa-fw w3-xxlarge w3-margin-right"> </i>github.com/byork2005</p>
         </a>
       </div>
 
