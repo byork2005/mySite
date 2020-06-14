@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<title>Brandon York</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="./images/by_favicon02.png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous"
+/>
+<script
+src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"
+></script>
+<script type="text/javascript" src="door_test.js"></script>
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/background.jpg');
+    min-height: 100%;
+  }
+</style>
+
+<body>
+
+  <!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+  </nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="index.html#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+      <a href="index.html#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h1 class="w3-jumbo">
+        <a href="index.html">
+          <img src="./images/logo2.svg" alt="Brandon York, Web Developer">
+        </a>
+      </h1>
+      <p>Full-Stack Developer, Team Builder, Movie Buff, Sand Volleyball Aficionado, Family Man</p>
+      <a href="https://drive.google.com/open?id=1v3jvylkVeAd82iWbF9r7iKBiC3IJCNe-" target="_blank">
+        <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+          <i class="fa fa-download"></i> View Resume
+        </button>
+      </a>
+    </header>
+
+    <!-- Project Section -->
+    <div class="w3-padding-32 w3-content" id="portfolio">
+      <div class="wrapper">
+        <p>The Monty Hall problem is a probability puzzle. This application uses javascript and jquery to present outcomes based on how many times you run the simulation.</p>
+        <hr>
+        <header>
+          <a href="https://github.com/byork2005/monty_hall" target="_blank"><h1 class="text-center" style="color: black;">The Monty Hall Problem</h1></a>
+          
+        </header>
+        <hr>
+        <div class="main-content">
+          <div class="intro-text">
+            <p>
+              The Monty Hall problem is a brain teaser, in the form of a
+              probability puzzle, loosely based on the American television game
+              show Let's Make a Deal and named after its original host, Monty
+              Hall.
+            </p>
+            <div class="alert alert-success">
+              Suppose you're on a game show, and you're given the choice of three
+              doors: Behind one door is a car; behind the others, goats. You pick
+              a door, say No. 1, and the host, who knows what's behind the doors,
+              opens another door, say No. 3, which has a goat. He then says to
+              you, "Do you want to pick door No. 2?" Is it to your advantage to
+              switch your choice?
+            </div>
+            <p>
+              Statistically it's in your best interest to always switch doors in
+              the above scenario. The tools below will allow you to simulate
+              between both options and see for yourself!
+            </p>
+          </div>
+          <div id="sim-wrap" class="row">
+            <div class="col-xs-12 col-sm-6 sim-1">
+              <h3>Keeping your original choice</h3>
+              <p>
+                The simulation will randomly select the correct door as well as
+                the chosen door, it will then display how often the selection is
+                correct.
+              </p>
+              <input
+                id="sim1-runs"
+                class="input-runs"
+                type="number"
+                name="sim1"
+              />
+              <button
+                type="submit"
+                class="btn-runs"
+                data-sim="firstScenario"
+                data-val="sim1-runs"
+              >
+                Run
+              </button>
+              <br /><br />
+              <div id="sim1-results"></div>
+              <button
+                id="sim1-all-btn"
+                class="hide"
+                type="button"
+                data-toggle="collapse"
+                data-target="#sim1-all-results"
+                aria-expanded="false"
+              >
+                Show All
+              </button>
+              <br>
+              <br>
+              <div id="sim1-all-results" class="collapse">test text</div>
+            </div>
+            <div class="col-xs-12 col-sm-6 sim-2">
+              <h3>Switching doors</h3>
+              <p>
+                The simulation will randomly select the correct door as well as
+                the chosen door, it will then remove one incorrect door and switch
+                the chosen door to the last remaining door.
+              </p>
+              <input
+                id="sim2-runs"
+                class="input-runs"
+                type="number"
+                name="sim2"
+              />
+              <button
+                type="submit"
+                class="btn-runs"
+                data-sim="thirdScenario"
+                data-val="sim2-runs"
+              >
+                Run
+              </button>
+              <br /><br />
+              <div id="sim2-results"></div>
+              <button
+                id="sim2-all-btn"
+                class="hide"
+                type="button"
+                data-toggle="collapse"
+                data-target="#sim2-all-results"
+                aria-expanded="false"
+              >
+                Show All
+              </button>
+              <br>
+              <br>
+              <div id="sim2-all-results" class="collapse">test text</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Project Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+        <a href="https://github.com/byork2005" style="text-decoration: none" target="_blank">
+          <i class="fa fa-github w3-hover-opacity"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/brandonjyork" style="text-decoration: none" target="_blank">
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/story/8569571" style="text-decoration: none" target="_blank">
+            <i class="fa fa-stack-overflow w3-hover-opacity"></i>
+          </a>
+        <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <!-- Add Google Maps -->
+  <script>
+
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

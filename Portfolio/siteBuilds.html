@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <title>Brandon York</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="./images/by_favicon02.png" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("./images/background.jpg");
+      min-height: 100%;
+    }
+    .mySlides {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+      <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav
+      class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+      style="display:none;padding-top:150px;right:0;z-index:2"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="closeNav()"
+        class="w3-button w3-black w3-xxxlarge w3-display-topright"
+        style="padding:0 12px;"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center">
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Home</a
+        >
+        <a
+          href="index.html#about"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >About</a
+        >
+        <a
+          href="index.html#portfolio"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Portfolio</a
+        >
+        <a
+          href="index.html#contact"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+      <!-- Menu icon to open sidebar -->
+      <span
+        class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
+        style="width:auto;right:0;"
+        onclick="openNav()"
+      >
+        <i class="fa fa-bars"></i>
+      </span>
+
+      <!-- Header -->
+      <header
+        class="w3-container w3-center"
+        style="padding:128px 16px"
+        id="home"
+      >
+        <h1 class="w3-jumbo">
+          <a href="index.html">
+            <img src="./images/logo2.svg" alt="Brandon York, Web Developer" />
+          </a>
+        </h1>
+        <p>
+          Full-Stack Developer, Team Builder, Movie Buff, Sand Volleyball
+          Aficionado, Family Man
+        </p>
+        <a
+          href="https://drive.google.com/open?id=1v3jvylkVeAd82iWbF9r7iKBiC3IJCNe-"
+          target="_blank"
+        >
+          <button
+            class="w3-button w3-light-grey w3-padding-large w3-margin-top"
+          >
+            <i class="fa fa-download"></i> View Resume
+          </button>
+        </a>
+      </header>
+
+      <!-- Project Section -->
+      <div class="w3-padding-32 w3-content" id="portfolio">
+        <h2 class="w3-text-grey">
+          Websites I have built...
+        </h2>
+        <hr class="w3-opacity" />
+        <div>
+          <p>
+            At Ride Digital I have built (from scratch) or updated close to 50
+            websites. Most are RV or boat dealerships, hovewever I can sprinkle
+            in some small buisness wordpress sites along with the new site for
+            Ride Digital itself.
+          </p>
+
+          <h2 class="w3-center">Manual Slideshow</h2>
+
+          <div class="w3-content w3-display-container">
+            <img class="mySlides" src="./images/RideDigital.png" style="width:100%"/>
+            <img class="mySlides" src="./images/burger.png" style="width:100%"/>
+            <img class="mySlides" src="./images/rex.png" style="width:100%" />
+            <img class="mySlides" src="./images/use.jpg" style="width:100%" />
+
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        <!-- End Project Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer
+        class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge"
+        style="margin:-24px"
+      >
+        <a
+          href="https://github.com/byork2005"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <i class="fa fa-github w3-hover-opacity"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/brandonjyork"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </a>
+        <a
+          href="https://stackoverflow.com/users/story/8569571"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <i class="fa fa-stack-overflow w3-hover-opacity"></i>
+        </a>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+
+    <!-- Add Google Maps -->
+    <script>
+      // Open and close sidebar
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

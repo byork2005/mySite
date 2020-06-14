@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <title>Brandon York</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="./images/by_favicon02.png" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("./images/background.jpg");
+      min-height: 100%;
+    }
+
+    .site-images a {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      border: 5px solid #337ab7;
+    }
+
+    .site-images a:hover {
+      border-color: red;
+    }
+
+    .site-images img {
+      transition: 1s;
+    }
+
+    .site-images span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      background-color: rgba(0,0,0,.7);
+      text-align: center;
+      padding: 10px;
+    }
+
+    .site-images a:hover img {
+      transform: scale(1.1)
+    }
+
+  </style>
+
+  <body>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+      <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav
+      class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+      style="display:none;padding-top:150px;right:0;z-index:2"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="closeNav()"
+        class="w3-button w3-black w3-xxxlarge w3-display-topright"
+        style="padding:0 12px;"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center">
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Home</a
+        >
+        <a
+          href="index.html#about"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >About</a
+        >
+        <a
+          href="index.html#portfolio"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Portfolio</a
+        >
+        <a
+          href="index.html#contact"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+      <!-- Menu icon to open sidebar -->
+      <span
+        class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
+        style="width:auto;right:0;"
+        onclick="openNav()"
+      >
+        <i class="fa fa-bars"></i>
+      </span>
+
+      <!-- Header -->
+      <header
+        class="w3-container w3-center"
+        style="padding:128px 16px"
+        id="home"
+      >
+        <h1 class="w3-jumbo">
+          <a href="index.html">
+            <img src="./images/logo2.svg" alt="Brandon York, Web Developer" />
+          </a>
+        </h1>
+        <p>
+          Full-Stack Developer, Team Builder, Movie Buff, Sand Volleyball
+          Aficionado, Family Man
+        </p>
+        <a
+          href="https://drive.google.com/open?id=1v3jvylkVeAd82iWbF9r7iKBiC3IJCNe-"
+          target="_blank"
+        >
+          <button
+            class="w3-button w3-light-grey w3-padding-large w3-margin-top"
+          >
+            <i class="fa fa-download"></i> View Resume
+          </button>
+        </a>
+      </header>
+
+      <!-- Project Section -->
+      <div class="w3-padding-32 w3-content" id="portfolio">
+        <h2 class="w3-text-grey">
+          <a href="https://www.ridedigital.com/" target="_blank"
+            >Ride Digital</a
+          >
+        </h2>
+        <hr class="w3-opacity" />
+        <div>
+          <p>
+            Ride Digital is a marketing agency in Overland Park, KS that offers
+            a full suite of marketing services, website design/management and
+            video production. They have two custom built website platforms that
+            double as inventory and lead management systems. Ride develops,
+            maintains and upgrades all platforms in house as well as facilitates
+            the website builds itself within the platforms, wordpress or custom.
+            Ride Digital is a child company of the Route 66 RV Network. The Ride
+            development team builds and manages all applications and websites
+            for the network as well.
+          </p>
+          <p>
+            As a developer for Ride Digital, I focus mainly on website builds
+            and platform enhancements. We regularly use HTML, CSS, Bootstrap,
+            Javascript and PHP, while working with mySQL, AJAX and Git. I have built/rebuilt at least 30 websites in my time with Ride Digital.
+          </p>
+          <b>RVSS and Ride Platforms</b>
+          <p>
+            Custom made website platforms similar to wordpress that Ride uses to
+            manage and build and websites. They double as inventory and lead
+            management systems. I work within these platforms daily with site
+            builds, maintenance, platform enhancements and anything else that
+            comes up.
+          </p>
+          <b>Mainstreet and RVsurance</b>
+          <p>
+            Custom built properties in partnership or owned by the Route 66 RV
+            Network. With the Mainstreet system I have worked on many aspects of
+            the program including contract generation, user customization
+            options, layout and general styling.<br />
+            On RVsurance, I implemented the final design within a wire frame
+            along with mobile responsiveness
+          </p>
+          <b>Misc</b>
+          <p>
+            The development team at Ride Digital is relatively small (5 people.)
+            So we all have to wear many hats, learn quickly and on the fly
+            sometimes. While hired to be a Frontend Dev, within months I was
+            teaching git to the rest of the team, writing sql queries, building
+            platform widgets, learning/using wordpress, configuring Google
+            analytics, checking DNS and hosting along with whatever needs done
+            in the moment. We take pride in stepping up and attacking whatever
+            needs completed.
+          </p>
+        </div>
+        <hr>
+        <h3>A Few Sites I Have Built...</h3>
+        <p style="font-size: 12px; font-style:italic;">* Disclaimer: Once sites are complete, site owners have free control over the content choices, 3rd party content or other elements such as pop ups and banners. While we strive to make attractive, SEO optimized websites, ultimately the client can choose what they want.</p>
+        <br>
+        <div class="row site-images">
+          <div class="col-xs-12 col-sm-3">
+            <a href="https://www.trianglerv.com" target="_blank">
+              <img
+                class="img-responsive"
+                src="./images/trianglerv.png"
+                alt="Triangle RV"
+              />
+              <span>Triangle RV</span>
+            </a>
+            <br />
+            <a href="https://www.pullwatersports.com" target="_blank">
+              <img
+                class="img-responsive"
+                src="./images/pullwatersports.png"
+                alt="Pull Watersports"
+              />
+              <span>Pull Watersports</span>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <a href="https://www.rideDigital.com" target="_blank">
+              <img
+                class="img-responsive"
+                src="./images/ridedigital.png"
+                alt="Ride Digital"
+              />
+              <span>Ride Digital</span>
+            </a>
+            <br />
+            <a href="https://www.arrkannrv.com" target="_blank">
+              <img
+                class="img-responsive"
+                src="./images/arrkannrv.png"
+                alt="ArrKannRV"
+              />
+              <span>ArrKann RV</span>
+            </a>
+           
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <a href="https://www.coldspringsrv.com" target="_blank">
+              <img
+                class="img-responsive"
+                src="./images/coldspringsrv.png"
+                alt="Cold Springs RV"
+              />
+              <span>Cold Springs RV</span>
+            </a>
+            <br />
+            <a href="https://www.law4321.com" target="_blank">
+              <img
+                class="img-responsive"
+                src="./images/law4321.png"
+                alt="Law 4321"
+              />
+              <span>Law 4321</span>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <a href="https://www.sarabaymarina.com" target="_blank">
+              <img
+                class="img-responsive"
+                src="./images/sarabaymarina.png"
+                alt="Sara Bay Marina"
+              />
+              <span>Sara Bay Marina</span>
+            </a>
+            <br />
+            <a href="https://www.dwproducts.com" target="_blank">
+              <img
+                class="img-responsive"
+                src="./images/dwproducts.png"
+                alt="DW Products"
+              />
+              <span>DW Products</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- End Project Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer
+        class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge"
+        style="margin:-24px"
+      >
+        <a
+          href="https://github.com/byork2005"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <i class="fa fa-github w3-hover-opacity"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/brandonjyork"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </a>
+        <a
+          href="https://stackoverflow.com/users/story/8569571"
+          style="text-decoration: none"
+          target="_blank"
+        >
+          <i class="fa fa-stack-overflow w3-hover-opacity"></i>
+        </a>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+
+    <!-- Add Google Maps -->
+    <script>
+      // Open and close sidebar
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
